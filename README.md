@@ -1,0 +1,1 @@
+Unsupervised machine learning models are created from the wine data for clustering from Kaggle.com. First by reducing dimensionality with PCA at 80% variance, then carrying out K-means with 3 clusters using the elbow and silhouette methods and finally by carrying out hierarchical clustering for comparison to K-means.
