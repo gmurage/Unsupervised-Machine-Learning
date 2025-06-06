@@ -24,10 +24,10 @@ Implications:
 2. Interpretation of K Means Clustering
 
 These two graphs illustrate methods for determining the optimal number of clusters in the wine dataset:
-Elbow Method (left graph):
-
+A) Elbow Method (left graph):https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Elbow_method.png
 It plots the Within-Cluster Sum of Squares (WCSS) against the number of clusters. The WCSS decreases sharply from 2 to 3 clusters and then levels off more gradually, forming an “elbow” at 3 clusters. This suggests that 3 clusters provide a good balance between reducing intra-cluster variance without overcomplicating the model.
-Silhouette Scores (right graph):
+
+B) Silhouette Scores (right graph):
 
 This method evaluates the quality of clustering using the Silhouette Score, which measures how well-separated the clusters are. The score peaks at around 0.42 when the number of clusters is 3, indicating that this configuration offers the best separation.
 Rationale:
