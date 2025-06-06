@@ -1,5 +1,36 @@
 Unsupervised machine learning models are created from the wine data for clustering from Kaggle.com. First by reducing dimensionality with PCA at 80% variance, then carrying out K-means with 3 clusters using the elbow and silhouette methods and finally by carrying out hierarchical clustering for comparison to K-means.
 Instructions: Download the  Wine Data for Clustering available on Kaggle.com. Conduct PCA to collapse correlated variables into a subset that includes 80% of the variance of the entirety of the data.  Then conduct k-means to identify clusters, and evaluate different values for k (e.g., 3, 4,…).  Finally, conduct hierarchical clustering.   Investigate assumptions.  Interpret all of your findings. 
+Interpretation of PCA Results
+
+The plots is a visualization of Principal Component Analysis (PCA) results, specifically showing the explained variance ratio for each principal component and the cumulative explained variance. The interpretation of the PCA plot is as follows"
+Key Elements:
+Y-axis (0.0 to 1.0):
+
+Represents the explained variance ratio which is the proportion of variance explained by each principal component or cumulatively.
+X-axis:
+
+This represents the principal components PC1, PC2 and so forth.
+Individual explained variance bars:
+
+Each bar shows the variance explained by a single principal component. For example PC1 explains the most variance, followed by PC2 and so forth.
+Cumulative explained variance line:
+
+The line shows how much variance is explained as more principal components are added. The first few components help explain most of the variance.
+Observations:
+
+    The first few principal components explain the majority of the variance as shown by a steep initial slope in the cumulative line.
+
+    Around 80% of the total variance is explained by the first few components as indicated by the label "0.8" at the corresponding 4th principal component bar.
+
+    The remaining components contribute minimally to the explained variance as shown by flattening of the cumulative line.
+
+Implications:
+
+    Dimensionality reduction is effective since only a small number of principal components 1-5 retain most of the information which is 80% variance.
+
+    This means that further components may be dropped to simplify the model without significant loss of information.
+
+
 In my research of wine data clustering with data provided by Kaggle.com, research starts by dimensionality reduction using Principal Component Analysis (PCA) to collapse correlated variables into a subset that includes 80% of variance of the entirety of the data. After conducting PCA, K-means clustering using 4 and then 3 clusters via the elbow and silhouette methods are employed. Results show better separation of clusters with 3 versus 4 clusters. Finally hierarchical clustering using the ward method is carried out as a third unsupervised machine learning method. Hierarchical clustering also achieves 3 main clusters just like in K-means using PCA with 80% variance. 
 According to Kannan and Menaga (2025), in hierarchical clustering, similar objects are clustered into groups using either the distance matrix or raw data. The algorithm works by first detecting the two clusters closest together. Secondly, the hierarchical clustering algorithm fuses the two most analogous groups and continues this process until all the clusters are combined. The output, which is a dendrogram, shows the categorized relationship between clusters and the dimension of the straight line between two different groups indicates the Euclidian  distance between the groups. 
 Sung (2025) argues that dimensionality reduction helps mitigate potential challenges caused by high dimensional features. Examples provided are overfitting, computational inefficiencies and noisy patterns. The author argues that Principal Component Analysis (PCA) is employed as an unsupervised linear transformation method that identifies orthogonal directions in the data. Known as principal components. There are several benefits of PCA that are achieved: firstly, is variance retention whereby the value of k is chosen based on the cumulative explained variance ratio that ensures that 90% of the original variance is preserved . This approach apparently strikes a good balance between complexity reduction and information retention. This compares well with the 80% variance on PCA using the wine data research. The second benefit of PCA is noise reduction, this is because principal  components with negligible variance are eliminated. In so doing, PCA acts as a form of noise filtering which can improve the subsequent model performance.
