@@ -22,16 +22,14 @@ Implications:
 2. This means that further components may be dropped to simplify the model without significant loss of information.
 
 2. Interpretation of K Means Clustering
-
 These two graphs illustrate methods for determining the optimal number of clusters in the wine dataset:
 A) Elbow Method (left graph):https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Elbow_method.png
 It plots the Within-Cluster Sum of Squares (WCSS) against the number of clusters. The WCSS decreases sharply from 2 to 3 clusters and then levels off more gradually, forming an “elbow” at 3 clusters. This suggests that 3 clusters provide a good balance between reducing intra-cluster variance without overcomplicating the model.
 
-B) Silhouette Scores (right graph):
-
+B) Silhouette Scores (right graph): https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Silhouette_scores.png
 This method evaluates the quality of clustering using the Silhouette Score, which measures how well-separated the clusters are. The score peaks at around 0.42 when the number of clusters is 3, indicating that this configuration offers the best separation.
-Rationale:
 
+Rationale:
 Both methods independently suggest that 3 clusters might be the ideal number for structuring the wine dataset.
 The plot visualizes the results of a K-means clustering algorithm applied to the wine dataset using Principal Component Analysis (PCA).
 
@@ -39,14 +37,10 @@ The key interpretation are as follows:
 Clusters Identified =3 :
 
 The wine dataset has been partitioned into three distinct clusters, each represented by different colors :purple, teal, and yellow. These clusters indicate groups of data points that are most similar to each other based on their features.
-Axes (PC1 & PC2):
-
-These represent the first two principal components from PCA, reducing the dimensionality of the wine dataset while retaining most of its variance at 80%. This transformation allows for a clear visualization of cluster separation.
+Axes (PC1 & PC2):These represent the first two principal components from PCA, reducing the dimensionality of the wine dataset while retaining most of its variance at 80%. This transformation allows for a clear visualization of cluster separation.
 Cluster Structure:
-
 The clusters appear well-separated, suggesting that K-means successfully identified meaningful groupings. However, some slight overlap may indicate areas where clustering boundaries are not perfectly distinct.
 Conclusions
-
 This plot of clusters aligns with the Elbow Method and Silhouette Score findings, confirming that 3 clusters is an optimal choice. It reinforces that the approach is well-tuned and appropriate.
 Further implications¶
 
