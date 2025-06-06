@@ -5,30 +5,20 @@ Interpretation of PCA Results
 The plots is a visualization of Principal Component Analysis (PCA) results, specifically showing the explained variance ratio for each principal component and the cumulative explained variance. The interpretation of the PCA plot is as follows"
 Key Elements:
 Y-axis (0.0 to 1.0):
-
 Represents the explained variance ratio which is the proportion of variance explained by each principal component or cumulatively.
 X-axis:
-
 This represents the principal components PC1, PC2 and so forth.
 Individual explained variance bars:
-
 Each bar shows the variance explained by a single principal component. For example PC1 explains the most variance, followed by PC2 and so forth.
 Cumulative explained variance line:
-
 The line shows how much variance is explained as more principal components are added. The first few components help explain most of the variance.
 Observations:
-
-    The first few principal components explain the majority of the variance as shown by a steep initial slope in the cumulative line.
-
-    Around 80% of the total variance is explained by the first few components as indicated by the label "0.8" at the corresponding 4th principal component bar.
-
-    The remaining components contribute minimally to the explained variance as shown by flattening of the cumulative line.
-
+1. The first few principal components explain the majority of the variance as shown by a steep initial slope in the cumulative line.
+2. Around 80% of the total variance is explained by the first few components as indicated by the label "0.8" at the corresponding 4th principal component bar.
+3. The remaining components contribute minimally to the explained variance as shown by flattening of the cumulative line.
 Implications:
-
-    Dimensionality reduction is effective since only a small number of principal components 1-5 retain most of the information which is 80% variance.
-
-    This means that further components may be dropped to simplify the model without significant loss of information.
+1. Dimensionality reduction is effective since only a small number of principal components 1-5 retain most of the information which is 80% variance.
+2. This means that further components may be dropped to simplify the model without significant loss of information.
 
 
 In my research of wine data clustering with data provided by Kaggle.com, research starts by dimensionality reduction using Principal Component Analysis (PCA) to collapse correlated variables into a subset that includes 80% of variance of the entirety of the data. After conducting PCA, K-means clustering using 4 and then 3 clusters via the elbow and silhouette methods are employed. Results show better separation of clusters with 3 versus 4 clusters. Finally hierarchical clustering using the ward method is carried out as a third unsupervised machine learning method. Hierarchical clustering also achieves 3 main clusters just like in K-means using PCA with 80% variance. 
