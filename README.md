@@ -44,24 +44,24 @@ Conclusions
 This plot of clusters aligns with the Elbow Method and Silhouette Score findings, confirming that 3 clusters is an optimal choice. It reinforces that the approach is well-tuned and appropriate.
 Further implications¶
 
-To have additional validations, further clustering with hierarchical clustering will be performed for comparison. https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Hierarchical_clustering_results.png
+To have additional validations, further clustering with hierarchical clustering will be performed for comparison.
 Hierarchical Clustering Results interpreted
 
 This is a Hierarchical Clustering Dendrogram using the Ward method, which is useful for determining the natural grouping of data points. The interpretations are as follows:
-Dendrogram Structure:
-
+Dendrogram Structure:https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Hierarchical_Clustering_Dendrogram.png
 The branching hierarchy illustrates how clusters are merged as the algorithm progresses. The x-axis represents individual sample indices, while the y-axis represents the distance at which clusters are joined. The higher the connection point, the more dissimilar the merged clusters are.
 Three Main Clusters:
-
 The wine dataset has been divided into three groups, marked by orange, green, and red sections, reinforcing previous findings from K-means clustering and silhouette analysis.
-Ward Method:
+Ward Method:This technique minimizes the variance within clusters, making it particularly useful for structured datasets.
+Conclusions:Since previously above the K-means clustering also suggested three clusters, this dendrogram validates that three is a meaningful choice in the wine data clustering.
 
-This technique minimizes the variance within clusters, making it particularly useful for structured datasets.
-Conclusions:
-
-Since previously above the K-means clustering also suggested three clusters, this dendrogram validates that three is a meaningful choice in the wine data clustering.
-
-
+The scatter plot visualizes the Hierarchical Clustering Results using Principal Component Analysis (PCA): https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Hierarchical_clustering_results.png
+Cluster Separation:
+The data has been grouped into three distinct clusters, represented by purple, teal, and yellow dots. This aligns with the findings from K-means clustering and the dendrogram analysis, reinforcing that three clusters provide an optimal structure.
+Axes Representation:
+The x-axis (PC1) and y-axis (PC2) correspond to the first two principal components, reducing the dataset’s dimensionality while preserving variance at 80%. This allows for a clear visualization of cluster separation.
+Hierarchical Clustering Performance:
+The clusters are well-defined, with minimal overlap, suggesting that hierarchical clustering effectively captured meaningful relationships between data points. Since this supports the earlier insights from the dendrogram analysis, it's a strong validation of the clustering approach of using 3 K-means clusters versus 4! 
 
 In my research of wine data clustering with data provided by Kaggle.com, research starts by dimensionality reduction using Principal Component Analysis (PCA) to collapse correlated variables into a subset that includes 80% of variance of the entirety of the data. After conducting PCA, K-means clustering using 4 and then 3 clusters via the elbow and silhouette methods are employed. Results show better separation of clusters with 3 versus 4 clusters. Finally hierarchical clustering using the ward method is carried out as a third unsupervised machine learning method. Hierarchical clustering also achieves 3 main clusters just like in K-means using PCA with 80% variance. 
 According to Kannan and Menaga (2025), in hierarchical clustering, similar objects are clustered into groups using either the distance matrix or raw data. The algorithm works by first detecting the two clusters closest together. Secondly, the hierarchical clustering algorithm fuses the two most analogous groups and continues this process until all the clusters are combined. The output, which is a dendrogram, shows the categorized relationship between clusters and the dimension of the straight line between two different groups indicates the Euclidian  distance between the groups. 
