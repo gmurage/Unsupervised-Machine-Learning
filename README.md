@@ -1,6 +1,7 @@
 Unsupervised machine learning models are created from the wine data for clustering from Kaggle.com. First by reducing dimensionality with PCA at 80% variance, then carrying out K-means with 3 clusters using the elbow and silhouette methods and finally by carrying out hierarchical clustering for comparison to K-means.
-Instructions: Download the  Wine Data for Clustering available on Kaggle.com. Conduct PCA to collapse correlated variables into a subset that includes 80% of the variance of the entirety of the data.  Then conduct k-means to identify clusters, and evaluate different values for k (e.g., 3, 4,…).  Finally, conduct hierarchical clustering.   Investigate assumptions.  Interpret all of your findings. 
-Interpretation of PCA Results: 
+Instructions: Download the  Wine Data for Clustering available on Kaggle.com. Conduct PCA to collapse correlated variables into a subset that includes 80% of the variance of the entirety of the data.  Then conduct k-means to identify clusters, and evaluate different values for k (e.g., 3, 4,…).  Finally, conduct hierarchical clustering.Investigate assumptions.  Interpret all of your findings.
+
+1. Interpretation of PCA Results: 
 https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/PCA_80__Variance.png
 The plots is a visualization of Principal Component Analysis (PCA) results, specifically showing the explained variance ratio for each principal component and the cumulative explained variance. The interpretation of the PCA plot is as follows"
 Key Elements:
@@ -19,6 +20,39 @@ Observations:
 Implications:
 1. Dimensionality reduction is effective since only a small number of principal components 1-5 retain most of the information which is 80% variance.
 2. This means that further components may be dropped to simplify the model without significant loss of information.
+
+2. Interpretation of K Means Clustering
+
+These two graphs illustrate methods for determining the optimal number of clusters in the wine dataset:
+Elbow Method (left graph):
+
+It plots the Within-Cluster Sum of Squares (WCSS) against the number of clusters. The WCSS decreases sharply from 2 to 3 clusters and then levels off more gradually, forming an “elbow” at 3 clusters. This suggests that 3 clusters provide a good balance between reducing intra-cluster variance without overcomplicating the model.
+Silhouette Scores (right graph):
+
+This method evaluates the quality of clustering using the Silhouette Score, which measures how well-separated the clusters are. The score peaks at around 0.42 when the number of clusters is 3, indicating that this configuration offers the best separation.
+Rationale:
+
+Both methods independently suggest that 3 clusters might be the ideal number for structuring the wine dataset.
+The plot visualizes the results of a K-means clustering algorithm applied to the wine dataset using Principal Component Analysis (PCA).
+
+The key interpretation are as follows:
+Clusters Identified =3 :
+
+The wine dataset has been partitioned into three distinct clusters, each represented by different colors :purple, teal, and yellow. These clusters indicate groups of data points that are most similar to each other based on their features.
+Axes (PC1 & PC2):
+
+These represent the first two principal components from PCA, reducing the dimensionality of the wine dataset while retaining most of its variance at 80%. This transformation allows for a clear visualization of cluster separation.
+Cluster Structure:
+
+The clusters appear well-separated, suggesting that K-means successfully identified meaningful groupings. However, some slight overlap may indicate areas where clustering boundaries are not perfectly distinct.
+Conclusions
+
+This plot of clusters aligns with the Elbow Method and Silhouette Score findings, confirming that 3 clusters is an optimal choice. It reinforces that the approach is well-tuned and appropriate.
+Further implications¶
+
+To have additional validations, further clustering with hierarchical clustering will be performed for comparison.
+
+
 
 
 In my research of wine data clustering with data provided by Kaggle.com, research starts by dimensionality reduction using Principal Component Analysis (PCA) to collapse correlated variables into a subset that includes 80% of variance of the entirety of the data. After conducting PCA, K-means clustering using 4 and then 3 clusters via the elbow and silhouette methods are employed. Results show better separation of clusters with 3 versus 4 clusters. Finally hierarchical clustering using the ward method is carried out as a third unsupervised machine learning method. Hierarchical clustering also achieves 3 main clusters just like in K-means using PCA with 80% variance. 
