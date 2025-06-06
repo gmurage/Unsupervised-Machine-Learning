@@ -67,7 +67,7 @@ The clusters are well-defined, with minimal overlap, suggesting that hierarchica
 Interpretation of the cluster assignment comparison
 This cross-tabulation compares the K-means clustering results (rows) with the hierarchical clustering results (columns). Each cell shows how many observations were assigned to a given cluster in K-means (0, 1, 2) vs. hierarchical clustering (1, 2, 3).
 
-[(https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Cross%20Validation%20of%20K-means%20versus%20Hierarchical%20Clusters.docx)](https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Cross%20Validation%20of%20K-means%20versus%20Hierarchical%20Clusters.docx)
+https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Cross%20Validation%20of%20K-means%20versus%20Hierarchical%20Clusters.docx
 
 Key observations:
 
