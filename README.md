@@ -1,7 +1,7 @@
 Unsupervised machine learning models are created from the wine data for clustering from Kaggle.com. First by reducing dimensionality with PCA at 80% variance, then carrying out K-means with 3 clusters using the elbow and silhouette methods and finally by carrying out hierarchical clustering for comparison to K-means.
 Instructions: Download the  Wine Data for Clustering available on Kaggle.com. Conduct PCA to collapse correlated variables into a subset that includes 80% of the variance of the entirety of the data.  Then conduct k-means to identify clusters, and evaluate different values for k (e.g., 3, 4,…).  Finally, conduct hierarchical clustering.   Investigate assumptions.  Interpret all of your findings. 
-Interpretation of PCA Results
-
+Interpretation of PCA Results: 
+https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/PCA_80__Variance.png
 The plots is a visualization of Principal Component Analysis (PCA) results, specifically showing the explained variance ratio for each principal component and the cumulative explained variance. The interpretation of the PCA plot is as follows"
 Key Elements:
 Y-axis (0.0 to 1.0):
