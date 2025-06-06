@@ -123,20 +123,17 @@ For example do clusters correspond to known wine types?.
 This comparison shows that both clustering methods largely agree, supporting the validity of the identified clusters. The small discrepancies could be due to algorithmic differences or natural overlaps in the data.
 
 5. Investigate Assumptions
-   
-  1. This is a QQ (Quantile-Quantile) plot for PC1 (Principal Component 1).
-
+1. This is a QQ (Quantile-Quantile) plot for PC1 (Principal Component 1). https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/QQ_Plot_for_PC1.png
 It helps assess whether the data follows a normal distribution by comparing theoretical quantiles (x-axis) with observed values (y-axis).
-Results
-
-    Blue dots represent the actual data points.
-    The red line (y = x) is the reference for a perfectly normal distribution.
-    If the data follows a normal distribution, the points should closely follow the red line.
-    The deviations at the tails suggest that PC1 may not fully adhere to normality.
+Results:
+1. Blue dots represent the actual data points.
+2. The red line (y = x) is the reference for a perfectly normal distribution.
+3. If the data follows a normal distribution, the points should closely follow the red line.
+4. The deviations at the tails suggest that PC1 may not fully adhere to normality.
 
 Conclusions:
-
 Given that normality is often an assumption in statistical analyses and modeling, this plot is useful for determining whether transformations or alternative approaches might be needed. Nevertheless PCA is most useful for dimensionality reduction, normality is less critical for PCA if the goal is dimensionality reduction versus statistical inference.
+
 2. PC1 distribution by cluster results on assumptions
 
 This plot helps evaluate how well PC1 differentiates the clusters and whether any extreme values exist. The purpose is to assess the distribution of the first principal component (PC1) across clusters from K-means. This is a box plot visualizing the distribution of PC1 (Principal Component 1) values across three different KMeans clusters (0, 1, and 2). It provides insights into how PC1 varies within each cluster.
