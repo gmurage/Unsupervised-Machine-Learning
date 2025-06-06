@@ -44,8 +44,22 @@ Conclusions
 This plot of clusters aligns with the Elbow Method and Silhouette Score findings, confirming that 3 clusters is an optimal choice. It reinforces that the approach is well-tuned and appropriate.
 Further implications¶
 
-To have additional validations, further clustering with hierarchical clustering will be performed for comparison.
+To have additional validations, further clustering with hierarchical clustering will be performed for comparison. https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Hierarchical_clustering_results.png
+Hierarchical Clustering Results interpreted
 
+This is a Hierarchical Clustering Dendrogram using the Ward method, which is useful for determining the natural grouping of data points. The interpretations are as follows:
+Dendrogram Structure:
+
+The branching hierarchy illustrates how clusters are merged as the algorithm progresses. The x-axis represents individual sample indices, while the y-axis represents the distance at which clusters are joined. The higher the connection point, the more dissimilar the merged clusters are.
+Three Main Clusters:
+
+The wine dataset has been divided into three groups, marked by orange, green, and red sections, reinforcing previous findings from K-means clustering and silhouette analysis.
+Ward Method:
+
+This technique minimizes the variance within clusters, making it particularly useful for structured datasets.
+Conclusions:
+
+Since previously above the K-means clustering also suggested three clusters, this dendrogram validates that three is a meaningful choice in the wine data clustering.
 
 
 
