@@ -121,7 +121,9 @@ This comparison shows that both clustering methods largely agree, supporting the
 
 5. Investigate Assumptions
 1. This is a QQ (Quantile-Quantile) plot for PC1 (Principal Component 1). https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/QQ_Plot_for_PC1.png
+
 It helps assess whether the data follows a normal distribution by comparing theoretical quantiles (x-axis) with observed values (y-axis).
+
 Results:
 1. Blue dots represent the actual data points.
 2. The red line (y = x) is the reference for a perfectly normal distribution.
@@ -132,10 +134,8 @@ Conclusions:
 Given that normality is often an assumption in statistical analyses and modeling, this plot is useful for determining whether transformations or alternative approaches might be needed. Nevertheless PCA is most useful for dimensionality reduction, normality is less critical for PCA if the goal is dimensionality reduction versus statistical inference.
 
 2. PC1 distribution by cluster results on assumptions: https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/PCA_80__Variance.png
-
 This plot helps evaluate how well PC1 differentiates the clusters and whether any extreme values exist. The purpose is to assess the distribution of the first principal component (PC1) across clusters from K-means. This is a box plot visualizing the distribution of PC1 (Principal Component 1) values across three different KMeans clusters (0, 1, and 2). It provides insights into how PC1 varies within each cluster.
 Results
-
     The y-axis represents the PC1 values, ranging from approximately -4 to 4.
     The x-axis represents the three clusters assigned by KMeans.
     Each box captures the interquartile range (IQR) which is the he middle 50% of the data.
