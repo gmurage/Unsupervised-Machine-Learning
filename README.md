@@ -34,7 +34,7 @@ Both methods independently suggest that 3 clusters might be the ideal number for
 The plot visualizes the results of a K-means clustering algorithm applied to the wine dataset using Principal Component Analysis (PCA).
 
 The key interpretation are as follows:
-Clusters Identified =3 :
+Clusters Identified =3 : https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/K-means_clustering_results.png
 
 The wine dataset has been partitioned into three distinct clusters, each represented by different colors :purple, teal, and yellow. These clusters indicate groups of data points that are most similar to each other based on their features.
 Axes (PC1 & PC2):These represent the first two principal components from PCA, reducing the dimensionality of the wine dataset while retaining most of its variance at 80%. This transformation allows for a clear visualization of cluster separation.
