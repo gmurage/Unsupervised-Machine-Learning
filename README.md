@@ -124,7 +124,7 @@ This comparison shows that both clustering methods largely agree, supporting the
 
 It helps assess whether the data follows a normal distribution by comparing theoretical quantiles (x-axis) with observed values (y-axis).
 
-Results:
+Results:https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/PC1_Distribution_by_Cluster.png
 1. Blue dots represent the actual data points.
 2. The red line (y = x) is the reference for a perfectly normal distribution.
 3. If the data follows a normal distribution, the points should closely follow the red line.
