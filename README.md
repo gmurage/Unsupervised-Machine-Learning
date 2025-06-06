@@ -131,7 +131,7 @@ Results:
 Conclusions:
 Given that normality is often an assumption in statistical analyses and modeling, this plot is useful for determining whether transformations or alternative approaches might be needed. Nevertheless PCA is most useful for dimensionality reduction, normality is less critical for PCA if the goal is dimensionality reduction versus statistical inference.
 
-2. PC1 distribution by cluster results on assumptions
+2. PC1 distribution by cluster results on assumptions: https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/PCA_80__Variance.png
 
 This plot helps evaluate how well PC1 differentiates the clusters and whether any extreme values exist. The purpose is to assess the distribution of the first principal component (PC1) across clusters from K-means. This is a box plot visualizing the distribution of PC1 (Principal Component 1) values across three different KMeans clusters (0, 1, and 2). It provides insights into how PC1 varies within each cluster.
 Results
