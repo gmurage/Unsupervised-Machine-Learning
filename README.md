@@ -66,14 +66,11 @@ The clusters are well-defined, with minimal overlap, suggesting that hierarchica
 4. Compare Clustering Results between K-Means and Hierarchical clustering
 Interpretation of the cluster assignment comparison
 This cross-tabulation compares the K-means clustering results (rows) with the hierarchical clustering results (columns). Each cell shows how many observations were assigned to a given cluster in K-means (0, 1, 2) vs. hierarchical clustering (1, 2, 3).
+
+https://github.com/gmurage/Unsupervised-Machine-Learning/blob/main/Cross%20Validation%20of%20K-means%20versus%20Hierarchical%20Clusters.docx
+
 Key observations:
-Cluster Assignment Comparison:
-Hierarchical   1   2   3
-K-means                 
-0              5   0  55
-1             50   0   2
-2              0  65   1
-Key observations:
+
 K-means Cluster 0 vs. Hierarchical Clusters:
 1. Mostly aligns with Hierarchical Cluster 3 (55 out of 60).
 2. 5 observations were assigned to Hierarchical Cluster 1 instead.
